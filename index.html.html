@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تنسيق الحدائق والمساحات الخضراء</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#2E7D32", secondary: "#795548" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Tajawal', sans-serif;
+      }
+      .hero-section {
+          background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.9)), url('https://readdy.ai/api/search-image?query=beautiful%20garden%20landscape%20with%20lush%20green%20plants%2C%20flowers%2C%20and%20trees.%20Natural%20sunlight%20filtering%20through%20leaves.%20Professional%20landscaping%20with%20stone%20pathways%20and%20water%20features.%20Serene%20and%20peaceful%20garden%20environment.%20High-quality%20professional%20photography%20with%20soft%20natural%20lighting&width=1600&height=800&seq=1&orientation=landscape');
+          background-size: cover;
+          background-position: center;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      .custom-checkbox {
+          position: relative;
+          padding-right: 30px;
+          cursor: pointer;
+          user-select: none;
+      }
+      .custom-checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+      }
+      .checkmark {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #fff;
+          border: 2px solid #2E7D32;
+          border-radius: 4px;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+          background-color: #2E7D32;
+      }
+      .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+          display: block;
+      }
+      .custom-checkbox .checkmark:after {
+          right: 6px;
+          top: 2px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+      }
+      .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          grid-auto-rows: 250px;
+          grid-auto-flow: dense;
+          gap: 16px;
+      }
+      .gallery-item:nth-child(3n) {
+          grid-row: span 2;
+      }
+      .gallery-item:nth-child(4n) {
+          grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-3">
+          <div class="flex items-center gap-4">
+            <a href="#" class="text-primary hover:text-primary/80">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-whatsapp-line ri-lg"></i>
+              </div>
+            </a>
+            <a href="#" class="text-primary hover:text-primary/80">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-instagram-line ri-lg"></i>
+              </div>
+            </a>
+            <a href="#" class="text-primary hover:text-primary/80">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-twitter-x-line ri-lg"></i>
+              </div>
+            </a>
+          </div>
+          <div class="font-['Pacifico'] text-2xl text-primary">logo</div>
+          <div class="flex items-center gap-4">
+            <a
+              href="#contact"
+              class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+              >تواصل معنا</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-center items-center py-4">
+          <ul class="flex gap-8">
+            <li>
+              <a href="#" class="text-gray-800 hover:text-primary font-medium"
+                >الرئيسية</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-gray-800 hover:text-primary font-medium"
+                >خدماتنا</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="text-gray-800 hover:text-primary font-medium"
+                >معرض الأعمال</a
+              >
+            </li>
+            <li>
+              <a
+                href="#why-us"
+                class="text-gray-800 hover:text-primary font-medium"
+                >لماذا نحن</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-gray-800 hover:text-primary font-medium"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-gray-800 hover:text-primary font-medium"
+                >اتصل بنا</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20">
+      <div class="container mx-auto px-4 w-full">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl font-bold text-gray-900 mb-6">
+            نهتم بجمال الطبيعة من أجلك
+          </h1>
+          <p class="text-xl text-gray-700 mb-8">
+            نقدم خدمات متكاملة في تنسيق الحدائق والمساحات الخضراء بأعلى معايير
+            الجودة وبأيدي خبراء متخصصين
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="#services"
+              class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+              >استكشف خدماتنا</a
+            >
+            <a
+              href="#contact"
+              class="bg-white text-primary border border-primary px-6 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap"
+              >احصل على استشارة مجانية</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">خدماتنا</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            نقدم مجموعة متكاملة من الخدمات المتخصصة في تنسيق الحدائق والمساحات
+            الخضراء لتلبية جميع احتياجاتك
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-plant-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              تنسيق الحدائق المنزلية والعامة
+            </h3>
+            <p class="text-gray-600">
+              نقوم بتصميم وتنفيذ الحدائق المنزلية والعامة بأحدث التقنيات
+              والأساليب العصرية التي تجمع بين الجمال والاستدامة
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-football-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              تصميم وزراعة الملاعب الرياضية
+            </h3>
+            <p class="text-gray-600">
+              نقدم خدمات متخصصة في تصميم وزراعة الملاعب الرياضية بمختلف أنواعها
+              وفق المعايير العالمية لضمان الأداء الأمثل
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-home-4-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              تنسيق الاستراحات والمزارع الخاصة
+            </h3>
+            <p class="text-gray-600">
+              نبدع في تنسيق الاستراحات والمزارع الخاصة بتصاميم فريدة تجمع بين
+              الراحة والجمال وتلبي تطلعات أصحابها
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-drop-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              تركيب شبكات الري الحديثة
+            </h3>
+            <p class="text-gray-600">
+              نقوم بتصميم وتركيب أنظمة الري الحديثة والذكية التي توفر المياه
+              وتضمن وصولها بشكل متوازن لجميع النباتات
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-seedling-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              توريد النباتات والأشجار والزهور
+            </h3>
+            <p class="text-gray-600">
+              نوفر تشكيلة واسعة من النباتات والأشجار والزهور المحلية والمستوردة
+              ذات الجودة العالية والمناسبة للبيئة المحلية
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-tools-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              صيانة الحدائق والمسطحات الخضراء
+            </h3>
+            <p class="text-gray-600">
+              نقدم خدمات صيانة دورية وشاملة للحدائق والمسطحات الخضراء لضمان
+              استمرار جمالها وحيويتها على مدار العام
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">معرض أعمالنا</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            نفخر بتقديم مجموعة من مشاريعنا المنفذة التي تعكس خبرتنا وجودة
+            خدماتنا في مجال تنسيق الحدائق
+          </p>
+        </div>
+
+        <div class="mb-8 flex justify-center">
+          <div class="inline-flex bg-white p-1 rounded-full shadow-sm">
+            <button
+              class="px-4 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap"
+            >
+              جميع المشاريع
+            </button>
+            <button
+              class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 !rounded-button whitespace-nowrap"
+            >
+              حدائق منزلية
+            </button>
+            <button
+              class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 !rounded-button whitespace-nowrap"
+            >
+              ملاعب رياضية
+            </button>
+            <button
+              class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 !rounded-button whitespace-nowrap"
+            >
+              استراحات
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item overflow-hidden rounded shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=beautiful%20home%20garden%20with%20colorful%20flowers%2C%20well-maintained%20lawn%2C%20stone%20pathways%2C%20and%20decorative%20elements.%20Professional%20landscaping%20with%20perfect%20symmetry%20and%20design.%20Natural%20sunlight%20highlighting%20the%20vibrant%20colors.%20High-quality%20professional%20photography&width=600&height=400&seq=2&orientation=landscape"
+              alt="حديقة منزلية"
+              class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="gallery-item overflow-hidden rounded shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=professional%20sports%20field%20with%20perfectly%20maintained%20green%20grass%2C%20white%20markings%2C%20and%20surrounding%20landscaping.%20Empty%20field%20ready%20for%20play.%20Perfect%20turf%20condition.%20Bright%20daylight%20showing%20the%20vibrant%20green%20color.%20High-quality%20professional%20photography&width=600&height=400&seq=3&orientation=landscape"
+              alt="ملعب رياضي"
+              class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="gallery-item overflow-hidden rounded shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=luxury%20garden%20retreat%20with%20comfortable%20seating%20areas%2C%20fire%20pit%2C%20water%20features%2C%20and%20lush%20greenery.%20Evening%20lighting%20creating%20a%20magical%20atmosphere.%20Perfect%20blend%20of%20nature%20and%20comfort.%20High-quality%20professional%20photography%20with%20warm%20lighting&width=600&height=800&seq=4&orientation=portrait"
+              alt="استراحة خاصة"
+              class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="gallery-item overflow-hidden rounded shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20irrigation%20system%20in%20a%20garden%20with%20drip%20lines%20and%20sprinklers.%20Close-up%20of%20irrigation%20equipment%20working%20in%20a%20lush%20green%20garden.%20Water%20droplets%20visible.%20Bright%20daylight.%20High-quality%20professional%20photography&width=800&height=400&seq=5&orientation=landscape"
+              alt="نظام ري حديث"
+              class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="gallery-item overflow-hidden rounded shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=beautiful%20garden%20with%20various%20plants%2C%20trees%2C%20and%20flowers%20arranged%20in%20a%20harmonious%20design.%20Stone%20pathways%2C%20small%20water%20feature%2C%20and%20seating%20area.%20Perfect%20balance%20of%20colors%20and%20textures.%20Bright%20natural%20lighting.%20High-quality%20professional%20photography&width=600&height=400&seq=6&orientation=landscape"
+              alt="تنسيق حدائق"
+              class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="gallery-item overflow-hidden rounded shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=private%20farm%20with%20organized%20agricultural%20areas%2C%20decorative%20garden%20sections%2C%20and%20recreational%20spaces.%20Harmony%20between%20productive%20and%20aesthetic%20elements.%20Wide%20view%20showing%20the%20entire%20layout.%20Bright%20daylight.%20High-quality%20professional%20photography&width=600&height=400&seq=7&orientation=landscape"
+              alt="مزرعة خاصة"
+              class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-block bg-white text-primary border border-primary px-6 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap"
+            >عرض المزيد من المشاريع</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-16 bg-primary/5">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">لماذا تختارنا؟</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            نسعى دائماً لتقديم أفضل الخدمات بمعايير عالمية وبأسعار تنافسية لنكون
+            الخيار الأمثل لعملائنا
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-team-line ri-xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">فريق متخصص</h3>
+            <p class="text-gray-600">
+              نمتلك فريقاً من المهندسين والفنيين ذوي الخبرة والكفاءة العالية في
+              مجال تنسيق الحدائق
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-award-line ri-xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">جودة عالية</h3>
+            <p class="text-gray-600">
+              نلتزم بأعلى معايير الجودة في جميع مراحل العمل من التصميم إلى
+              التنفيذ والصيانة
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-price-tag-3-line ri-xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">أسعار تنافسية</h3>
+            <p class="text-gray-600">
+              نقدم خدماتنا بأسعار تنافسية مع الحفاظ على مستوى عالٍ من الجودة
+              لتحقيق أفضل قيمة لعملائنا
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="bg-white p-6 rounded shadow-sm text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-customer-service-2-line ri-xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              خدمة ما بعد البيع
+            </h3>
+            <p class="text-gray-600">
+              نوفر خدمات صيانة دورية ودعم فني مستمر لضمان استمرار جودة وجمال
+              الحدائق على المدى الطويل
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">من نحن</h2>
+            <p class="text-gray-600 mb-6">
+              شركة متخصصة في مجال تنسيق الحدائق والمساحات الخضراء، تأسست عام
+              2010 على يد مجموعة من المهندسين المتخصصين في هندسة الحدائق
+              والزراعة. نمتلك خبرة تزيد عن 15 عاماً في تصميم وتنفيذ مختلف أنواع
+              الحدائق والمسطحات الخضراء بأعلى معايير الجودة.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div class="bg-primary/5 p-5 rounded">
+                <h3 class="text-xl font-bold text-primary mb-3">رؤيتنا</h3>
+                <p class="text-gray-600">
+                  أن نكون الشركة الرائدة في مجال تنسيق الحدائق على مستوى
+                  المنطقة، ونسعى لنشر ثقافة الاهتمام بالمساحات الخضراء وتعزيز
+                  التوازن البيئي.
+                </p>
+              </div>
+              <div class="bg-primary/5 p-5 rounded">
+                <h3 class="text-xl font-bold text-primary mb-3">رسالتنا</h3>
+                <p class="text-gray-600">
+                  تقديم خدمات متميزة في تصميم وتنفيذ وصيانة الحدائق والمساحات
+                  الخضراء بأعلى معايير الجودة وبأسعار تنافسية.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#contact"
+                class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+                >تواصل معنا</a
+              >
+              <a
+                href="#services"
+                class="bg-white text-primary border border-primary px-6 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap"
+                >استكشف خدماتنا</a
+              >
+            </div>
+          </div>
+
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=professional%20landscaping%20team%20working%20in%20a%20garden.%20Diverse%20team%20of%20gardeners%20and%20landscape%20architects%20in%20uniform.%20Team%20members%20planting%2C%20designing%2C%20and%20maintaining%20a%20beautiful%20garden.%20Natural%20daylight.%20High-quality%20professional%20photography&width=800&height=600&seq=8&orientation=landscape"
+              alt="فريق العمل"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">تواصل معنا</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            نحن هنا للإجابة على استفساراتكم وتقديم المشورة المجانية. يمكنكم
+            التواصل معنا من خلال النموذج أدناه
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">أرسل رسالة</h3>
+
+            <form>
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2"
+                  >الاسم الكامل</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="أدخل اسمك الكامل"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2"
+                  >البريد الإلكتروني</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="أدخل بريدك الإلكتروني"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="phone" class="block text-gray-700 mb-2"
+                  >رقم الهاتف</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="أدخل رقم هاتفك"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="service" class="block text-gray-700 mb-2"
+                  >الخدمة المطلوبة</label
+                >
+                <div class="relative">
+                  <select
+                    id="service"
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary appearance-none pr-8"
+                  >
+                    <option value="">اختر الخدمة</option>
+                    <option value="gardens">تنسيق الحدائق المنزلية</option>
+                    <option value="sports">تصميم الملاعب الرياضية</option>
+                    <option value="farms">تنسيق الاستراحات والمزارع</option>
+                    <option value="irrigation">تركيب شبكات الري</option>
+                    <option value="plants">توريد النباتات والأشجار</option>
+                    <option value="maintenance">صيانة الحدائق</option>
+                  </select>
+                  <div
+                    class="absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                  >
+                    <div
+                      class="w-4 h-4 flex items-center justify-center text-gray-500"
+                    >
+                      <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 mb-2"
+                  >الرسالة</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="اكتب رسالتك هنا..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+              >
+                إرسال الرسالة
+              </button>
+            </form>
+          </div>
+
+          <div>
+            <div class="bg-white p-8 rounded-lg shadow-sm mb-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                معلومات التواصل
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <div
+                      class="w-5 h-5 flex items-center justify-center text-primary"
+                    >
+                      <i class="ri-map-pin-line"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">العنوان</h4>
+                    <p class="text-gray-600">
+                      شارع الملك فهد، حي الورود، الرياض، المملكة العربية
+                      السعودية
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <div
+                      class="w-5 h-5 flex items-center justify-center text-primary"
+                    >
+                      <i class="ri-phone-line"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">الهاتف</h4>
+                    <p class="text-gray-600">+966 55 123 4567</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <div
+                      class="w-5 h-5 flex items-center justify-center text-primary"
+                    >
+                      <i class="ri-mail-line"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">البريد الإلكتروني</h4>
+                    <p class="text-gray-600">info@gardencompany.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <div
+                      class="w-5 h-5 flex items-center justify-center text-primary"
+                    >
+                      <i class="ri-time-line"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">ساعات العمل</h4>
+                    <p class="text-gray-600">
+                      الأحد - الخميس: 8:00 صباحاً - 5:00 مساءً
+                    </p>
+                    <p class="text-gray-600">الجمعة - السبت: مغلق</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <h4 class="font-bold text-gray-900 mb-3">تابعنا على</h4>
+                <div class="flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-whatsapp-line"></i>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-instagram-line"></i>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-twitter-x-line"></i>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-facebook-line"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden shadow-sm h-80 bg-gray-200">
+              <div
+                style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"
+                class="w-full h-full"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="font-['Pacifico'] text-2xl text-white mb-4">logo</div>
+            <p class="text-gray-400 mb-6">
+              شركة متخصصة في تنسيق الحدائق والمساحات الخضراء بأعلى معايير الجودة
+              وبأيدي خبراء متخصصين
+            </p>
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-whatsapp-line"></i>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-instagram-line"></i>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-twitter-x-line"></i>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-facebook-line"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >خدماتنا</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >معرض الأعمال</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#why-us"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >لماذا نحن</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >تنسيق الحدائق المنزلية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >تصميم الملاعب الرياضية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >تنسيق الاستراحات والمزارع</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >تركيب شبكات الري</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >توريد النباتات والأشجار</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >صيانة الحدائق</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">اتصل بنا</h3>
+            <ul class="space-y-3">
+              <li class="flex gap-3">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                >
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span class="text-gray-400"
+                  >شارع الملك فهد، حي الورود، الرياض، المملكة العربية
+                  السعودية</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                >
+                  <i class="ri-phone-line"></i>
+                </div>
+                <span class="text-gray-400">+966 55 123 4567</span>
+              </li>
+              <li class="flex gap-3">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                >
+                  <i class="ri-mail-line"></i>
+                </div>
+                <span class="text-gray-400">info@gardencompany.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 جميع الحقوق محفوظة لشركة تنسيق الحدائق
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
